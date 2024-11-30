@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "src.main:app",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "7070"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src",
+                "ES_URL": "https://57b888d584cb41e69a1bbb05565cf72a.us-central1.gcp.cloud.es.io:443",
+                "ES_TOKEN": "QUxvSmVwTUJubUpEdWhRdDJaNDE6LW56V0s1cDBSMW1BSnN5M1ZjZU1GZw=="
+            }
+        }
+    ]
+}
